@@ -1,11 +1,17 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
+  purge: ['./pages/**/*.{js,ts,jsx,tsx,mdx}',  "./app/**/*.{js,ts,jsx,tsx,mdx}"],
   content: [
     './pages/**/*.{js,ts,jsx,tsx,mdx}',
     './components/**/*.{js,ts,jsx,tsx,mdx}',
     './app/**/*.{js,ts,jsx,tsx,mdx}',
   ],
   theme: {
+    screens: {
+      'tablet': '640px',
+      'laptop': '1024px',
+      'desktop': '1280px',
+    },
     extend: {
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',

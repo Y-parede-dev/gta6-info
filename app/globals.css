@@ -3,25 +3,27 @@
 @tailwind utilities;
 
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+  --foreground-rgb: 180, 255, 25;
+  --background-midle-rgb: 65, 96, 207;
+  --background-start-rgb: 248, 82, 163;
+  --background-end-rgb: 225, 135, 62;
 }
 
-@media (prefers-color-scheme: dark) {
+/* @media (prefers-color-scheme: dark) {
   :root {
     --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+    --background-start-rgb: 150, 150, 150;
+    --background-end-rgb: 80, 80, 80;
   }
-}
+} */
 
 body {
   color: rgb(var(--foreground-rgb));
   background: linear-gradient(
-      to bottom,
+      to top,
       transparent,
-      rgb(var(--background-end-rgb))
+      rgb(var(--background-end-rgb)),
+      rgb(var(--background-midle-rgb))
     )
     rgb(var(--background-start-rgb));
 }

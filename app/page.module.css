@@ -1,0 +1,39 @@
+/* .colorTextLinearG{
+    position: relative;
+    background-clip: text;
+    box-shadow:
+        0 0 10px 0 rgb(var(--background-midle-rgb)) 28%,
+        0 0 20px 0 rgb(var(--background-end-rgb))40%,
+        0 0 10px 0 rgb(var(--background-start-rgb))
+}
+.colorTextLinearG::after{
+    content: attr(data-content);
+    position: absolute;
+    top: .1rem;
+    left: .1rem;
+    color: black;
+    filter: blur(5px);
+    z-index: -1;
+    width: 100%;
+    animation: shadow 2s linear infinite;
+}
+
+
+@keyframes shadow {
+    0%{
+        background: linear-gradient(90deg, rgb(var(--background-midle-rgb)), rgb(var(--background-end-rgb)),(var(--background-start-rgb)));
+        color: transparent;
+        background-clip: text;
+    }
+    50%{
+        background: linear-gradient(90deg, rgb(var(--background-start-rgb)), rgb(var(--background-end-rgb)),(var(--background-midle-rgb)));
+        color: transparent;
+        background-clip: text;
+    }
+    100%{
+        background: linear-gradient(90deg, rgb(var(--background-midle-rgb)), rgb(var(--background-end-rgb)),(var(--background-start-rgb)));
+        color: transparent;
+        background-clip: text;
+    }
+    
+} */
